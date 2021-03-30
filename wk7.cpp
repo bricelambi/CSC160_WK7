@@ -1,5 +1,6 @@
 
 #include <iostream>
+#include<vector>
 
 using namespace std;
 
@@ -22,12 +23,22 @@ int main() {
   cout << size << endl;
 
   // int *other_num = (int*)malloc(size*sizeof(int));
-  int* other_num = new int[size];
+  // int* other_num = new int[size];
+
+  vector<int>* numbers = new vector<int>();
+
+  for (int i = 0; i < size; i++) {
+    numbers->push_back(i);
+  }
+
+  cout << "vector works for big numbers" << endl << flush;
+
+  int other_num[size];
   other_num[0] = 43;
   other_num[1] = 44;
   cout << "other num " << other_num[0] << ", " << other_num[1] << endl;
 
-  delete [] other_num;
+  // delete [] other_num;
 
   char ch = 'a';
   char *c_str = new char[3];

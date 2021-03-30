@@ -8,6 +8,7 @@ class WeatherReport {
 
   private:
     string location;
+    string validTime;
     double temperature;
     double windSpeed;
 
@@ -22,7 +23,10 @@ class WeatherReport {
 
     double getWindSpeed();
     void setWindSpeed(double windSpeed);
-    
+
+    string getValidTime();
+    void setValidTime(string valid_time);
+
     string getLocation();
 };
 

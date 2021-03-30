@@ -27,6 +27,13 @@ void WeatherReport::setWindSpeed(double windSpeed) {
   this->windSpeed = windSpeed;
 }
 
+void WeatherReport::setValidTime(string valid_time) {
+  this->validTime = valid_time;
+}
+
+string WeatherReport::getValidTime() {
+  return this->validTime;
+}
 double WeatherReport::getWindSpeed() {
   return this->windSpeed;
 }
